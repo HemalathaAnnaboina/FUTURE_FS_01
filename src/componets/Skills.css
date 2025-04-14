@@ -1,0 +1,116 @@
+.skills-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background: #fff;
+    flex-wrap: wrap;
+  }
+  
+  /* Columns */
+  .technical-skills,
+  .professional-skills {
+    width: 45%;
+  }
+  
+  /* Technical Skills */
+  .skill-bar {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skill-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .skill-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  .skill-percent {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .bar {
+    background: #e0e0e0;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .fill {
+    height: 100%;
+    background: #007bff;
+    border-radius: 10px;
+  }
+  
+  /* Professional Skills */
+  .professional-skills h2 {
+    margin-bottom: 20px;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .circle-skill {
+    text-align: center;
+    width: 120px;
+  }
+  
+  /* Circular chart visuals */
+  .circular-chart {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke: #00acc1;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+  }
+  
+  .percentage {
+    fill: #333;
+    font-size: 0.35em;
+    text-anchor: middle;
+    dominant-baseline: central;
+    transform: rotate(90deg);
+    transform-origin: center;
+  }
+  
+  /* Responsive for Mobile */
+  @media (max-width: 768px) {
+    .technical-skills,
+    .professional-skills {
+      width: 100%;
+    }
+  
+    .circle-skill {
+      width: 100px;
+    }
+  }
+  

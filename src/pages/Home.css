@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #f8c15e, #fff3e4);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    font-weight: bold;
+    font-size: 30px; /* Larger logo size */
+  }
+  
+  .navbar nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px; /* Larger font size for navbar links */
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px 50px;
+    height: 100%;
+    min-height: 80vh;
+  }
+  
+  .text-box {
+    max-width: 600px;
+  }
+  
+  .text-box .role {
+    color: #f9a825;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 28px; /* Larger role text */
+  }
+  
+  .text-box h1 {
+    font-size: 48px; /* Larger heading text */
+    margin-bottom: 25px;
+  }
+  
+  .text-box .subtext {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 22px; /* Larger subtext */
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn-yellow {
+    background-color: #f9a825;
+    padding: 15px 25px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Larger button text */
+  }
+  
+  .btn-outline {
+    border: 2px solid #f9a825;
+    padding: 15px 25px;
+    color: #f9a825;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 18px; /* Larger button text */
+  }
+  
+  .hero-img img {
+    width: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  @media (max-width: 768px) {
+    .text-box h1 {
+      font-size: 32px;
+    }
+  
+    .text-box .role {
+      font-size: 20px;
+    }
+  
+    .text-box .subtext {
+      font-size: 18px;
+    }
+  
+    .buttons .btn-yellow,
+    .buttons .btn-outline {
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+  
+    .hero-img img {
+      width: 250px;
+    }
+  
+    .navbar {
+      padding: 15px 20px;
+    }
+  
+    .navbar nav a {
+      margin-left: 15px;
+      font-size: 16px;
+    }
+  }
+  

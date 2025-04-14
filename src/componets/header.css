@@ -1,0 +1,93 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f8c15e, #f9a825);
+  color: #8de018d7;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* Ensures logo and nav links are spaced apart */
+  align-items: center;
+  padding: 10px 30px;  /* Reduced padding to fit the height */
+  position: fixed;
+  top: 0;
+  left: 0;  /* Make sure it starts from the left */
+  width: 100%;
+  background-color: #0e0d0ba1; /* Changed background to #f9a825 (Yellow) */
+  color: rgba(22, 22, 20, 0.833);
+  box-shadow: 0 4px 10px rgba(222, 12, 12, 0.627);
+  z-index: 1000;
+  height: 80px;  /* Explicit height */
+}
+
+.navbar .logo h1 {
+  margin: 0;
+  font-size: 24px;  /* Adjusted logo size to fit better */
+}
+
+.navbar nav a {
+  color: #000;  /* Changed text color to #f9a825 (Yellow) */
+  text-decoration: none;
+  font-size: 16px;  /* Slightly smaller font size for links */
+  margin-left: 20px;  /* Space between links */
+  transition: color 0.3s ease;
+
+}
+
+
+
+.logo {
+    height: 4em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.navbar nav a:hover {
+  color: #630b0bda;  /* Highlight color on hover (Dark Red) */
+}
+
+/* Home Section */
+.main-content {
+  margin-top: 80px;  /* Offset for the fixed navbar height */
+  padding: 20px;
+  flex-grow: 1;  /* Ensures it takes up remaining space */
+}
+
+/* Mobile responsive navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar nav {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar nav a {
+    font-size: 14px;  /* Smaller font size for mobile */
+    margin-left: 0;  /* No left margin for mobile */
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .main-content {
+    margin-top: 120px; /* Increased margin for smaller screens */
+  }
+}

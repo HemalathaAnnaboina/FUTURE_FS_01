@@ -1,0 +1,146 @@
+/* Contact Section Styles */
+.contact-section {
+    background: #f9f9f9;
+    padding: 40px 20px; /* Reduced padding */
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .contact-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 15px; /* Reduced padding */
+  }
+  
+  .contact-section h4 {
+    font-size: 14px; /* Reduced font size */
+    color: #888;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px; /* Reduced margin */
+  }
+  
+  .contact-section h2 {
+    font-size: 28px; /* Slightly reduced font size */
+    margin-bottom: 15px; /* Reduced bottom margin */
+    color: #222;
+  }
+  
+  .contact-section p {
+    font-size: 14px; /* Reduced font size */
+    color: #555;
+    margin-bottom: 20px; /* Reduced bottom margin */
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    margin-bottom: 20px; /* Reduced margin */
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 22px; /* Reduced font size */
+    margin: 0 10px; /* Reduced margin */
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #0077b5; /* LinkedIn Blue */
+  }
+  
+  /* Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column; /* Stack the inputs vertically */
+    align-items: center;
+    gap: 20px; /* Add space between elements */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px 12px; /* Reduced padding */
+    margin-bottom: 10px; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px; /* Reduced font size */
+    resize: none;
+  }
+  
+  .contact-form button {
+    background: #333;
+    color: white;
+    padding: 10px 25px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #555;
+    transform: scale(1.05); /* Slight hover effect */
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .contact-section h2 {
+      font-size: 26px; /* Adjusted font size */
+    }
+  
+    .contact-section p {
+      font-size: 12px; /* Adjusted font size */
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 13px; /* Adjusted font size */
+    }
+  
+    .social-icons a {
+      font-size: 18px; /* Adjusted font size */
+    }
+  
+    .contact-form button {
+      font-size: 13px; /* Adjusted font size */
+      padding: 8px 20px; /* Adjusted padding */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contact-section {
+      padding: 30px 10px; /* Reduced padding */
+    }
+  
+    .contact-container {
+      padding: 10px; /* Reduced padding */
+    }
+  
+    .contact-section h2 {
+      font-size: 22px; /* Reduced font size */
+    }
+  
+    .contact-section p {
+      font-size: 11px; /* Reduced font size */
+    }
+  
+    .contact-form button {
+      font-size: 12px; /* Reduced font size */
+      padding: 8px 18px; /* Reduced padding */
+    }
+  }
+  
+  /* Align Name and Email in a row */
+  .contact-form .input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .contact-form .input-row input {
+    flex: 1;
+  }
+  
